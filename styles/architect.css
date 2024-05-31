@@ -3,6 +3,10 @@
     font-family: 'open-sans',sans-serif;
     font-family: 'work sans',sans-serif;
 }
+
+.text-light-gray{
+    column-gap: #727272;
+}
 .btn-primary{
     border-radius: 8px;
     color: #fff;
@@ -49,9 +53,7 @@ nav li a{
 .banner-title{
     font-size: 4rem;
 }
-.banner-driscription{
-    column-gap: #727272;
-}
+
 .banner img{
     width: 100%;
 }
@@ -61,7 +63,7 @@ nav li a{
 /* main styles */
 main{
     max-width: 1440px;
-    margin: 70px;
+    margin: 70px auto;
 }
 
 /* teams style */
@@ -74,6 +76,10 @@ main{
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
     
+}
+.teams-contain{
+    padding-left :70px ;
+    padding-right: 70px;
 }
 .teams-title{
     font-size: 2.8rem;
@@ -97,16 +103,27 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-containe{
         flex-direction: column;
     }
+    .teams-img-container{
+        grid-template-columns: 1fr ;
+    }
+    .teams-contain{
+        padding-left :20px ;
+        padding-right: 20px;
+    }
+
     
 }
 
 /* tablet or medium devices */
 
 @media  and (min-widht:576px) and (max-widht:960px) {
-    nav{
+    header{
+        padding:50px;
+    }
+    nav, .teams-container{
         flex-direction:colum;
     }
     
