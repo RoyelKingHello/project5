@@ -57,6 +57,41 @@ nav li a{
 }
 
 
+
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 70px;
+}
+
+/* teams style */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .quik-list{
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams-title .text-features{
+    color: #ff900e;
+    font-weight: 700;
+}
+
+
+
+
+
 /* responsive media queries */
 @media  and (max-widht:576px) {
     header{
